@@ -1,0 +1,62 @@
+
+.icon-menu {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 20px;
+    vertical-align: middle;
+    fill: none;
+}
+
+/* Global menu icon line styles */
+.icon-menu .line {
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 4px;
+    -webkit-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -moz-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -o-transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    background-color: #ff7043;
+}
+
+/* Menu icon line 1 */
+.icon-menu .line-1 {
+    top: 0;
+}
+
+/* When active, rotate line 1 to be lefthand part of X */
+.sidebar-active .icon-menu .line-1 {
+    -webkit-transform: translateY(8px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(8px) translateX(0) rotate(45deg);
+    transform: translateY(8px) translateX(0) rotate(45deg);
+}
+
+/* Line 2 */
+.icon-menu .line-2 {
+    top: 50%;
+    margin-top: -2px;
+}
+
+/* When active, hide line 2 */
+.sidebar-active .icon-menu .line-2 {
+    opacity: 0;
+}
+
+/* Line 3 */
+.icon-menu .line-3 {
+    bottom: 0;
+}
+
+/* When active, rotate line 3 to be righthand part of X */
+.sidebar-active .icon-menu .line-3 {
+    -webkit-transform: translateY(-8px) translateX(0) rotate(-45deg);
+    -moz-transform: translateY(-8px) translateX(0) rotate(-45deg);
+    transform: translateY(-8px) translateX(0) rotate(-45deg);
+}

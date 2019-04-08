@@ -1,0 +1,260 @@
+body{
+    background-color: #eceff4;
+}
+
+h2{
+    font-weight: 500;
+    border-bottom: 2px solid #cccccc9c;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+
+}
+.side-nav li a:hover {
+    color: #ff7043;
+}
+
+h4{
+    font-weight: 400;
+    color:#ff7043;
+}
+
+
+.sidebar-col {
+    background-color: #fff;
+    min-height: 100vh;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.37);
+    background: rgba(255, 255, 255, 0.8);
+}
+
+
+.sidebar-col .logo{
+    text-align: center;
+}
+
+.sidebar-col .logo img{
+    width:50%;
+    margin-top:3rem;
+}
+
+.sidebar-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.sidebar-title h1{
+    font-size: 26px;
+    font-weight: 400;
+    color: #ff7043;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.sidebar-title span{
+    font-weight: 500;
+    font-size: 26px;
+    color:#ff7043;
+    line-height: 1.2;
+    text-align: center;
+}
+
+
+.side-nav {
+    padding: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.btn-sidebar{
+    display: none;
+}
+
+.side-nav li {
+    list-style: none;
+    padding: 6px 0;
+}
+
+.side-nav li a {
+    display: block;
+    padding: 6px 20px;
+    font-weight: 500;
+    color: #707070;
+    border-left: 4px solid transparent;
+}
+
+.side-nav li a:hover {
+
+}
+
+.side-nav img{
+    width: 1.3rem;
+    display: inline;
+    top: -2px;
+    position: relative;
+    margin-right: 0.5rem;
+}
+.side-nav .active {
+    border-left-color: #fb9039;
+    color: #fb9039;
+}
+.side-nav .active:hover {
+
+}
+
+
+.scenario{
+    background-color: #ffffff;
+    height:auto;
+    border-radius: 10px;
+    padding: 20px 25px 20px 25px;
+}
+
+
+.md-form .form-control:focus{
+    box-shadow: 0 1px 0 0 #fc8f3a!important;
+    border-bottom: 1px solid #ff7043!important;
+}
+
+.md-form label{
+    font-weight: 300;
+}
+
+.md-form label.active{
+    color:#ff7043!important;
+    font-weight: 400;
+}
+
+
+.btn.btn-deep-orange{
+    padding: 10px 40px 10px 40px;
+
+}
+
+
+.btn.btn-success{
+    padding: 10px 40px 10px 40px;
+
+}
+
+
+.first-div{
+    border-bottom: 2px solid #cccccc9c;
+    padding-bottom: 100px;
+    margin-bottom: 40px;
+}
+
+.dropdown-toggle::after{
+    position: relative;
+    float: right;
+    top: 7px;
+    right: 15px;
+}
+
+.dropdown-toggle {
+    margin-left: 0px;
+    text-align: left;
+    width: 20%;
+    padding: 10px 5px 10px 10px!important;
+}
+
+.sidebar-cover {
+    /*display: none;*/
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: all 0.4s;
+    opacity: 0;
+}
+
+.container-fluid > .row {
+    max-height: 100vh;
+}
+
+.main-content {
+    overflow-y: scroll;
+    max-height: 100vh;
+}
+
+@media screen and (max-width: 992px) {
+    .btn-sidebar {
+        position: fixed;
+        right: 1rem;
+        top: 1rem;
+        box-shadow: none !important;
+        padding: 0.84rem;
+        background: transparent;
+    }
+
+    .main-content {
+        z-index: 999;
+        margin-top: 3rem;
+    }
+
+    .dropdown-toggle{
+        width:100%;
+    }
+
+    .btn-deep-orange{
+        width:100%;
+    }
+    .btn-success{
+        width:100%;
+    }
+
+    .sidebar-col {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        z-index: 1001;
+        background: #fff;
+        margin-left: -100%;
+        transition: margin-left 0.4s;
+    }
+
+    :not(.sidebar-active) .sidebar-col {
+        box-shadow: none;
+    }
+    .sidebar-active .sidebar-col {
+        margin-left: 0;
+    }
+
+    .sidebar-active .sidebar-cover {
+        display: block;
+        opacity: 1;
+    }
+
+    .btn-sidebar{
+        display: block;
+    }
+}
+
+/*
+ *  Scrollbar
+ */
+
+#style-6::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+#style-6::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+#style-6::-webkit-scrollbar-thumb {
+    background-color: #fd6d2a;
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent)
+}
